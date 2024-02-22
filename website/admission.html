@@ -1,0 +1,325 @@
+<html>
+  <head>
+    <meta name="viewport" content=" with=device-width,initial-scale=1.0">
+    <title>CollegeAdmission Form</title>
+    <link rel="stylesheet" href="admission.css">
+    <link rel="stylesheet" href="../website/style.css">
+  </head>
+  <style>
+    *{
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links {
+      margin-top: -35px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .nav-links u {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    fieldset {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    </style>
+    <body>
+
+
+    <br><br> <center><img src="../website/cd2.png" style="height: 130px; width: 1470px;margin-top: -37px; " ></html></center>
+
+
+    <nav> 
+      <a href="index.html"></a>
+      <div class="nav-links">
+          <ul>
+              <li><a href="C:/Users/aksha/OneDrive/Desktop/website/website/web.html">HOME</a></li>
+              <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/web3.html">ABOUT</a></li>
+              <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/admission.html">ADMISSION</a></li>
+              <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/Placement.html">PLACEMENT</a></li>
+              <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/contact.html">CONTACT</a></li>
+          </ul>
+      </div>
+  </nav>
+    <marquee><center><h1>Admission Form</h1></center></marquee>
+     <div style="margin: 50px;padding: 10px; text-align: center;">
+     <form action="connect.php" method="POST">
+       <fieldset>
+         <legend>Personal Details</legend>
+         <table>
+            <tr>
+		            <td>Name: </td>
+		            <td><input type="text" name="Name"/></td>
+                <td>Mobile No:</td>
+                <td><input type="text" name="Mobile No" maxlength="10"></td>
+            </tr>
+            <tr>
+		            <td>Mother's Name:</td>
+		            <td><input type="text" name="Mother's Name"/></td>
+                <td>Mobile No:</td>
+                <td><input type="text" name="Mobile No" maxlength="10"></td>
+	          </tr>
+            <tr>
+		            <td>Father's Name:</td>
+		            <td><input type="text" name="Father's Name" ></td>
+                <td>Mobile No:</td>
+                <td><input type="text" name="Mobile No" maxlength="10"></td>
+	          </tr>
+            <tr>
+               <tr>
+		              <td>Guardian Name:</td>
+		              <td><input type="text" name="Guardian Name"/></td>
+                  <td>Mobile No:</td>
+                  <td><input type="text" name="Mobile No" maxlength="10"></td>
+	             </tr>
+               <tr>
+		              <td>Date of Birth:</td>
+		              <td><input type="date" name="Date of Birth"/></td>
+	             </tr>
+               <tr>
+                <td>Gender:</td>
+                <td style="display: flex;">
+                    <input type="radio" name="r1" value="male">Male</input>
+                    <input type="radio" name="r1" vale="female">Female</input>
+                            </td>
+                  </tr>
+               <tr>
+		              <td>Email ID: </td>
+		              <td><input type="text" name="Email Id"/></td>
+               </tr>
+               <tr>
+                  <td>Aadhar No: </td>
+                  <td><input type="text" maxlength="12"></td>
+               </tr>
+               <tr>
+                  <td>Blood Group: </td>
+                  <td><input type="text"/></td>
+               </tr>
+               <tr>
+                  <td>Caste:</td>
+                  <td><input type="text" name="Caste"/></td>
+               </tr>
+               </tr>
+                <tr>
+                  <td>Category:</td>
+                  <td><input type="text" name="Category"/></td>
+                </tr>
+                <tr>
+                  <td>Permanent Address:</td>
+                  <td><input type="text" name="Permanent Address"/></td>
+                </tr>
+                <tr>
+                  <td>Present Address:</td>
+                  <td><input type="text" name="Present name="/></td>
+                </tr>
+                <tr>
+                  <td>State:</td>
+                  <td><input type="text" name="State"/></td>
+                </tr>
+                <tr>
+                  <td>Course: </td>
+                <td><select name="course">
+                      <option>Select course</option>
+                      <option>Civil Engineering</option>
+                      <option>Mechanical  Engineering</option>
+                      <option>Electronics and Communication  Engineering</option>
+                      <option>Electrical  Engineering</option>
+                      <option>Computer Science and  Engineering</option>
+                      <OPTION>Artificial Intelligence and Data Science  Engineering</OPTION>
+                    </select>
+                </td>
+                </tr>
+          </table>
+       </fieldset> 
+       <fieldset>
+
+
+<legend>Academic Details</legend>
+  <table>
+          
+    <tr>
+      <td>10<sup>th</sup> Class Marks:</td>
+      <td><input type="number"/></td>
+      <td>Board: </td>
+      <td><input type="text"/></td>
+    </tr>
+    <tr>
+      <tr>
+        <td>12<sup>th</sup> Class Marks:</td>
+        <td><input type="number"/></td>
+        <td>Board: </td>
+        <td><input type="text"/></td>
+      </tr>
+    </tr>
+    <tr>
+        <td>CET/COMED-K/AIEE:</td>
+    <tr>
+      <td>Reg No:</td>
+      <td><input type="text"></td>
+      <td>Rank:</td>
+      <td><input type="text"></td>
+    </tr>
+  </table>
+</fieldset>
+<fieldset>
+  <table>
+    <legend>Diploma/Lateral Entry</legend>
+      <tr>
+        <td>Branch: </td>
+        <td><input type="text"/></td>
+        <td>Month and Year of Passing:</td>
+        <td><input type="text"/></td>
+      </tr>
+      <tr>
+        <td>Name of the Board: </td>
+        <td><input type="text"/></td>
+        <td>Percentage: </td>
+        <td><input type="text"/></td>
+      </tr>
+      <tr>
+        <td>Total Marks: </td>
+        <td><input type="text"/></td>
+      </tr>
+      <tr>
+        <td>Karnataka DCET Rank: </td>
+        <td><input type="text"/></td>
+      </tr>
+  </table>
+</fieldset>
+<fieldset>
+  <legend>Local Guardian(In case Emergency)</legend>
+    <table>
+      <tr>
+        <td>Name: </td>
+		    <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>Occupation: </td>
+		    <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>Address: </td>
+		    <td><input type="text"/></td>
+      </tr>
+      <tr>
+        <td>Mobile No: </td>
+		    <td><input type="text" maxlength="10"/></td>
+      </tr>
+    </table>
+  </fieldset>
+<fieldset>
+  <table>
+    <legend>Family Background</legend>
+      <tr>
+        <td>Father's Name: </td>
+		    <td><input type="text"/></td>
+      </tr>
+      <tr>
+        <td>Occupation: </td>
+		    <td><input type="text"/></td>
+      </tr>
+      <tr>
+        <tr>
+          <td>Mother's Name: </td>
+          <td><input type="text"/></td>
+        </tr>
+          <td>Occupation: </td>
+		      <td><input type="text"/></td>
+        </tr>
+        <tr>
+          <td>Annual Income of Parent: </td>
+		      <td><input type="text"/></td>
+        </tr>
+  </table>
+</fieldset>
+<fieldset>
+  <table>
+    <legend>Student's Bank Details</legend>
+      <tr>
+        <td>Name(As per Bank Pass Book): </td>
+		    <td><input type="text"/></td>
+      </tr>
+      <tr>
+        <td>Account No: </td>
+		    <td><input type="text" maxlength="16"/></td>
+      </tr>
+      <tr>
+        <td>Name of the Bank: </td>
+		    <td><input type="text"/></td>
+      </tr>
+      <tr>
+        <td>Branch: </td>
+		    <td><input type="text"/></td>
+      </tr>
+      <tr>
+        <td>IFSC Code: </td>
+		    <td><input type="text"/></td>
+      </tr>
+  </table>
+</fieldset>
+       <div style="margin-top: 20px; padding: 10px;text-align: center;">
+           <Button onclick="alert('Form Submitted');">Submit</button>
+       </div>  
+     </form>
+     </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.main-section {
+     text-align: center;
+     padding: 20px;
+     background-color: #f0f0f0;
+ }
+ 
+ .heading {
+     color: #333;
+ }
+ 
+ .placement {
+     overflow: hidden;
+     white-space: nowrap;
+ }
+ 
+ .placement img {
+     margin: 0 20px;
+     height: 50px; /* Adjust the height as needed */
+ }

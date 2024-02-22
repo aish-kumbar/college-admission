@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #d3dbde;
+}
+.main_content{
+    margin: 6% 0 0 36%;
+    position: relative;
+    -webkit-border-before-width: 25%;
+}
+.image{
+    display: block;
+    width: 300px;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.75);
+    overflow:hidden;
+    width:  300px;
+    height: 0;
+    transition: .5s ease;
+}
+.main_content:hover .overlay{
+    height: 300px;
+}
+h1{
+    width: 300px;
+    margin-top: 30%;
+    color: white;
+    font-size: 4vw;
+    position: absolute;
+    text-align: center;
+    font-family: 'Damion', cursive;
+    transform: rotate(-5deg)skew(-5deg);
+}
+h2{
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+    font-size: 1.2vw;
+    margin: 60% 0 0 18%;
+    width: 300px;
+    letter-spacing: 5px;
+    line-height: 1.5rem;
+}
+</style>
+<body>
+    <div class="main_content">
+        <img src="C:\Users\aksha\OneDrive\Desktop\website\website\pic.jpg" class="image" alt="" style="height: 300px;width: 300px;">
+        <div class="overlay">
+            <h1>Enroll  Courses</h1>
+            <h2>For Various</h2>
+        </div>
+    </div>
+</body>
+</html>

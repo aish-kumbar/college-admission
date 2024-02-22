@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF 8">
+        <title>Logo</title>
+        <link rel="stylesheet"type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+        <link rel="stylesheet"type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+        <link rel="stylesheet" href="../website/pstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Placement</h1>
+        <div class="logo-slider">
+            <div class="item"><a href="#"><img src="../website/amazon.png" alt=""></a></div>
+            <div class="item"><a href="#"><img src="../website/accenture.png" alt="" style="height: 45px;"></a></div>
+            <div class="item"><a href="#"><img src="../website/bosch.png" alt="" style="height: 45px;"></a></div>
+            <div class="item"><a href="#"><img src="../website/capgemini.png" alt="" style="height: 45px;"></a></div>
+            <div class="item"><a href="#"><img src="../website/hcl.png" alt="" style="height: 45px;"></a></div>
+            <div class="item"><a href="#"><img src="../website/hp.jpeg" alt="" style="height: 45px;"></a></div>
+            <div class="item"><a href="#"><img src="../website/ibm.png" alt="" style="height: 45px;"></a></div>
+            <div class="item"><a href="#"><img src="../website/wipro.png" alt="" style="height: 45px;"></a></div>
+        </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script>
+            $('.logo-slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                dots:true,
+                arrows: true,
+                autoplay:true,
+                autoplayspeed: 2000,
+                infinte: true
+            });
+        </script>
+    </body>
+</html>

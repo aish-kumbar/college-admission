@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html l<ang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <nav> 
+        <a href="index.html"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/web.html">HOME</a></li>
+                <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/web3.html">ABOUT</a></li>
+                <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/admission.html">ADMISSION</a></li>
+                <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/Placement.html">PLACEMENT</a></li>
+                <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/contact.html">CONTACT</a></li>   
+            </ul>
+        </div>
+    </nav>
+    <style>
+        body{
+            background-color: rgba(0, 255, 255, 0.492);
+        }
+        nav{
+      display: flex;
+      padding :2% 6%;
+      justify-content:space-between;
+      align-items:center;
+}
+nav img{
+     width:150px;
+}
+nav-links{
+       flex:1;
+       text-align:right;
+       
+
+}
+.nav-links ul li{
+      list-style:none;
+      display:inline-block;
+      padding:8px 12px;
+      position:relative;
+}
+.nav-links ul li a{
+    
+    color:black;
+    text-decoration:none;
+    font-size:20px;
+
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background: red;
+    display:block;
+    margin: auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+  
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.25s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 1500px;
+            height: 750px; 
+        }
+
+        /* Optional: Add styling for navigation buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 25%;
+            width: auto;
+            padding: 8px;
+            margin-top: -11px;
+            color: white;
+            font-weight: bold;
+            font-size: 6px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* Optional: Add styling for navigation dots */
+        .dot-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+        .p{
+            margin-top: 20px;
+        }
+        text{
+            margin-left: 30px;
+        }
+        marquee{
+            font-size: 30px;
+            speak:  as 20px;;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="marquee">   
+         <marquee> Welcome to S G Balekundri Institute Of Technolgy Belagavi. </marquee>
+    
+    </div>
+<div class="slider-container">
+    <div class="slides">
+     
+        <div class="slide"><img src="C:\Users\ANIL\Desktop\website\img 3.jpeg" alt="Slide 1"></div>
+       <div class="slide"><img src="C:\Users\ANIL\Desktop\website\EC.jpeg" alt="Slide 2"></div>
+        <div class="slide"><img src="C:\Users\ANIL\Desktop\website\img 9.jpeg" alt="Slide 3"></div>
+       
+        <!-- Add more slides as needed -->
+    </div>
+
+    <!-- Optional: Add navigation buttons -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<!-- Optional: Add navigation dots -->
+<div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <!-- Add more dots as needed -->
+</div>
+
+<script>
+    let slideIndex = 1;
+
+    function showSlides(index) {
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        if (index > totalSlides) {
+            slideIndex = 1;
+        }
+
+        if (index < 1) {
+            slideIndex = totalSlides;
+        }
+
+        slides.style.transform = translateX(${-100 * (slideIndex - 1)}%);
+    }
+
+    function changeSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    // Optional: Auto play the slider
+    setInterval(() => {
+        changeSlide(1);
+    }, 3000);
+</script>
+ 
+  <style>
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+.payra{
+    font-size: 12px;
+}
+
+  </style>
+ 
+    <div class="container">
+      <div class="image">
+        <img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg" alt="Dinsaur">
+      </div>
+      <div class="text">
+        <h1>About SGBIT</h1>
+        <p>Today the great SSE trust runs 21 educational institutions<br>
+             under its banner with the blessings of Dr. Shivabasava Swamiji 
+             and valuable guidance of Dr. Siddharam Swamiji. <br>
+             The roots of SSE trust are not only present in Karnataka but also touched the capital of India, New Delhi. <br>
+             The present chairperson of trust Dr. Siddharam Swamiji propagating in the direction to provide the utmost quality education to the students of all the sections.</p>
+        <p>S.G.Balekundri Institute of Technology  was
+            established in the year 2008, by Shri Sidddharameshwar Education Trust.<br>
+             It is located in the heart of Belagavi city.<br> Within nine years of its establishment,
+              the college has entrenched itself in the league of the most reputed institutes of
+               Belagavi.<br> The college campus is spread over 10 acres of land,in the midst of an
+                educational locality, flanked by a number of reputed educational institutes.</p>
+      </div>
+    </div>
+    <div class="text2" >
+    <h1>Courses Offered:</h1>
+
+<P>1.Computer Science Engineering</P>
+
+<p>2.Electronics and Communication Engineering</p>
+
+<p>3.Electricals And Electronics Engineering</p>
+
+<p>4.Mechanical Engineering</p>
+
+<p>5.Civil Engineering</p>
+</div>
+
+<div class="course">
+
+    <h1>Computer Science and Engineering</h1>
+    <p>The department has an undergraduate program in Computer Science Engineering with an intake of 60, increased to 120 in 2020 and enhanced to 180 from the academic year 2021 - 22. Since its inception, the department believes and focuses on outcome-based education. The department has a well-qualified, experienced staff and well-equipped infrastructure to fulfill the needs of learners in academics and the IT emerging areas. The unique department features make students involved in the learning process actively during the course period. The department conducts workshops and training programs to prepare our students to be competent in solving real-world problems.
+    The students are trained in all aspects to become skilled in their careers and professional activities. The students are inspired to take up interdisciplinary issues to solve and become multi-domain technocrats. Our students are placed in reputed IT companies like IBM, TCS, Infosys, Robert Bosch, Mind Tree, Wipro, etc. The department is recognized as the research centre by the VTU, Belagavi. We in the CSE department at SGBIT are very excited to associate with learners, industries and premier institutes to be a part of the information revolution of this current era.</p>
+    <img src="C:\Users\aksha\OneDrive\Desktop\website\website\CSE.jpg">
+  
+    <h1>Civil Engineering</h1>
+    <p>The Department of Civil Engineering was established in the year 2010 with an intake of 60 students for Undergraduate Program. In the year 2014 intake was increased to 120 and started Postgraduate course (M.Tech) in Structural Engineering with the intake of 18 students. The Department is recognized as Research Centre by VTU, Belagavi during the Academic Year 2016-17.
+       The department has been actively involving in conducting conferences, workshops, site visits, industrial tours and several programs to provide the platform for sharing and spreading the advanced developments in the field of civil engineering. The department also encourages the student to participate in extra curricular and co– curricular activities, special guest lectures, seminars, technical fests thus ensuring the overall development, nurturing of team spirit and organization skills.The civil engineering department aims at developing analytical and experimental skills in students as well as faculties to implicate in various field works. Our department has well qualified faculties with industrial experience who are enthusiastic in imparting the quality teaching to the students. The department also has well equipped laboratories and has its own library housing with good number of reference books for the benefit of staff and students.
+
+       The Department has excellent academic and placement records. The Department is also undertaking consultancy works to strengthen the bond between industry & institute interaction.</p>
+      <img src="C:\Users\aksha\OneDrive\Desktop\website\website\civil.jpg">
+      
+    <h1>Mechanical Engineering</h1>
+    <p>The Department of Mechanical Engineering started in the year 2008 with an intake of 60 students. It is recognized as research center by Visvesvaraya Technological University in the year 2017. Currently nine research scholars are pursuing Ph.D at the department. At present the department has 02 Professors, 02 Associate Professors and 12 Assistant professors. Three faculty are pursuing Ph.D. Add-on courses are conducted for students by experts to cater the needs of industry. It is committed to continuously improve the quality of education by enhancing the knowledge of students with relevant beyond curriculum programs. Industrial visits are organized for students on regular basis for practical knowledge and also encourage them to undergo internship at industry beyond requirement. The laboratories are well equipped as per norms. The students association ARMES (Association of Royal Mechanical Engineering Students) organizes value added programs in social, moral & technical fields for overall development of students. The department initiated consultancy services in material testing, fuel property and performance testing. It has signed MoUs with reputed industries to benefit students for Industry projects, Internships, industrial visits, invited talks etc. and to bridge the gap between Industry and Academia. Webinars, panel discussions and workshops were conducted for students for exposure to the recent trends in Mechanical Engineering. Video lectures, e-books and e-notes were shared to students during pandemic. Online classes and laboratories were conducted to engage students in learning.The civil engineering department aims at developing analytical and experimental skills in students as well as faculties to implicate in various field works. Our department has well qualified faculties with industrial experience who are enthusiastic in imparting the quality teaching to the students. The department also has well equipped laboratories and has its own library housing with good number of reference books for the benefit of staff and students.</p>
+    <img src="C:\Users\aksha\OneDrive\Desktop\website\website\ME.jpg">
+      
+      
+    <h1>Electrical Engineering</h1>
+    <p>The Department has excellent academic and placement records. The Department is also undertaking consultancy works to strengthen the bond between industry & institute interaction.
+    The Department of Electrical and Electronics Engineering was established in the year 2008, right from the inception of the institution. With a present intake of 60, the department has well equipped laboratories and is spread over an area of more than 900 square meters. The department has dedicated faculty with one doctorate and four of them pursuing Ph.D.
+    The faculty are actively engaged in career guidance, mentoring, industry - institute interaction and arranging events such as industrial visits, guest lectures, workshops, conferences and guiding externally sponsored projects on a regular basis.
+
+    The department has received grants for funded student projects from KSCST, VGST and VTU etc. The students undergo rigorous training for placement right from the second year and get recruited in core as well as IT companies.
+
+    The department has also signed an Memorandum of Understanding (MoU) with Karnataka German Technical Training Institute (KGTTI), Hubballi, Shanthala Power Limited, Hubballi, Vishwabharati Technologies Pvt. Ltd., and HESCOM, Hubballi for skill development of our students and many of our students have been benefitted by pursuing internships.</p>
+      <img src="C:\Users\aksha\OneDrive\Desktop\website\website\Electrical.jpeg">
+
+    <h1>Electronics and Communications Engineering</h1>
+    <p>The Department of Electronics and Communication Engineering was incepted in the year 2008 with an intake of 60 students and presently 120 students graduate every academic year. Total numbers of students who have graduated till now are 820 in number. The department pre-Qualified for NBA in the year 2019.
+
+      The department has well equipped laboratories and is spread over an area of more than 1000sq.mt. The department has dedicated faculty with 3 doctorates and six pursuing the Ph.D degree. The department has a VTU recognized Research Centre since the year 2017. Currently the faculty and Research scholars within the department are orchestrating their collective efforts to bring in new knowledge and innovation in state of art board themes such as VLSI design and embedded system, IOT and its applications, Next generation Wireless and optical Network, Sensor Network etc.
+      
+      The Research Centre within the department motivates the faculty and scholars to publish their work in Reputed and high indexed Journals and Conferences. The Faculty is also encouraged to organize Conferences, Seminar and Workshop. The department also encourages the final year students to publish the result of their project work in UGC recognized Journals.
+      
+      The department has received grants from AICTE to conduct FDP and from KSCST and VTU for student projects. The students undergo rigorous training for placement starting as early as the Second year, and get recruited in core as well as IT companies. The department also follows an effective mentoring process for all the students.
+      
+      The department Alumni is placed in high rated core companies and serves at high positions. The department maintains regular contact with its Alumni through various interactions such as, online meet; Alumni meet in person and through social media groups. The department also organized Webinars/ talks through its Alumni.
+      </p>
+      <img src="C:\Users\aksha\OneDrive\Desktop\website\website\ECE.jpg">
+
+
+      <h1>Artificial Intelligence and Data Science</h1>
+      <p>Artificial Intelligence and Data Science (AI&DS) is started in the year 2021. In this program Student will learn scientific methodologies, processes and techniques drawn from different domains Such as -Programming, Big data, Distributed Computing and Deep learning. The Course Curriculum offers the Student a rich blend of Theory & Practice, with different Programming tools & libraries, enabling innovative Spirit and Job readiness. Students acquire Skills and an edge that are Vital for managing Big Data life cycle and mining insightful knowledge for building appealing AI & Data Science products for the industry and Society.
+        AI is the simulation of human intelligence processed by machines, especially Computer Systems. It is wide ranging brand of CS concerned with building Smart machines Capable of performing tasks that typically require Human intelligence.
+        Data science is an interdisciplinary field with the ability to extract knowledge from data twinned from multiple sources like Sensors, Images, Video Streaming, Satellite, and Medical & Cloud.
+        B.E in Artificial Intelligence and Data Science program Consists of 8 Semesters. The Program is approved and recognized by UGC, AICTE and VTU, approved by Govt. of Karnataka.</p>
+        <img src="c:\Users\aksha\OneDrive\Desktop\website\website\Ai.jpg">
+
+</div> 
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+         <html>
+<head>
+    <meta name="viewport" content=" with=device-width,initial-scale=1.0">
+    <title>University website Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  
+    <section class="header">
+<div class="logo">
+    <img src="C:\Users\aksha\OneDrive\Desktop\l.png" alt="">
+</div>
+        <nav> 
+            <a href="index.html"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="C:/Users/aksha/OneDrive/Desktop/website/website/web.html">HOME</a></li>
+                    <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/web3.html">ABOUT</a></li>
+                    <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/admission.html">ADMISSION</a></li>
+                    <li><a href="file:///C:/Users/aksha/OneDrive/Desktop/website/website/contact.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+<div class="text-box">
+    <h1><center>WELCOME TO SGBIT</center></h1>
+    <p style="font-size: 100px;"><center> your talents and abilities will improve over time,<br>but for that,you have to start.</center></p>
+    
+</div>
+    </section>
+    
+</body>
+
+    <!------course------>
+    
+    <div class="course">
+        <h1> Courses we offer</h1>
+        <p> lorem dolor sit amet ,consectetur adispincing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3> Degree</h3>
+                <p> any of several litles conferred by collage 
+                    and universitirs to indicate the complition
+                     of a course of study  or the extent of
+                     academic achivment.</p>
+            </div>
+            <div class="course-col">
+                <h3> post graduation</h3>
+                <p> any of several litles conferred by collage 
+                    and universitirs to indicate the complition 
+                    of a course of study or the extent of 
+                    academic achivment.</p>
+            </div>
+        </div>
+    </div>
+    <div class="facilities">
+        <h1> Our Facilities</h1>
+        <p> we are providing facilities like..</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="C:\Users\aksha\OneDrive\Desktop\website\website\l.jpg">
+                <h3>Library</h3>
+                <p>SGBIT is a place where you can find an 
+                    amalgamation oflearning, fun, culture,
+                     lore, literature and many such life
+                      preaching activities.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="C:\Users\aksha\OneDrive\Desktop\website\website\sp.jpg">
+                <h3>sports</h3>
+                <p> To provide opportunity to the students to
+                     showcase their talent in sports field</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="C:\Users\aksha\OneDrive\Desktop\website\website\cul.jpg">
+                    <h3>cultural programs</h3>
+                    <p> In addition to helping students prove their mettle, 
+                        cultural activities also help create
+                         a great sense of team spirit and unity.</p>
+                    </div>
+        </div>
+    </div>
+</body>
+</head>
+
+
